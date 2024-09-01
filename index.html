@@ -307,11 +307,11 @@
         document.getElementById("snowflakes").appendChild(snowflake);
 
         // Set random size and position
-        const size = Math.random() * 4 + 1 + "px";
+        const size = Math.random() * 3 + 2 + "px";
         snowflake.style.width = size;
         snowflake.style.height = size;
         snowflake.style.left = Math.random() * 100 + "vw";
-        snowflake.style.animationDuration = Math.random() * 9 + 2 + "s";
+        snowflake.style.animationDuration = Math.random() * 9 + 10 + "s";
 
         // Remove snowflake after animation ends
         snowflake.addEventListener("animationend", () => {
@@ -319,7 +319,7 @@
         });
       }
 
-      setInterval(createSnowflake, 10); // Adjust frequency of snowflakes
+      setInterval(createSnowflake, 120); // Adjust frequency of snowflakes
     </script>
   </body>
 </html>
